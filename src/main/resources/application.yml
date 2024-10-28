@@ -1,3 +1,7 @@
 spring:
   application:
     name: Randez-backend
+  config:
+    activate:
+      on-profile: local, dev, prod
+

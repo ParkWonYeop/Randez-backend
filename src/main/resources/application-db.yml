@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://124.61.33.143:5432/rendez
+    username: randez
+    password: randez5432
+  jpa:
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
