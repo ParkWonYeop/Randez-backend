@@ -26,18 +26,31 @@ repositories {
 }
 
 dependencies {
+    //implementation
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    compileOnly("org.projectlombok:lombok")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+    //runtimeOnly
     runtimeOnly("com.h2database:h2")
     runtimeOnly("org.postgresql:postgresql")
-    annotationProcessor("org.projectlombok:lombok")
+
+    //compileOnly
+    compileOnly("org.projectlombok:lombok")
+
+    //developmentOnly
+    developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+    //testImplementation
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.springframework.security:spring-security-test")
+
+    //testRuntimeOnly
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    //annotationProcessor
+    annotationProcessor("org.projectlombok:lombok")
 }
 
 kotlin {
