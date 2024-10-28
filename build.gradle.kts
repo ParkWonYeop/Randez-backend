@@ -29,7 +29,10 @@ dependencies {
     //implementation
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("ch.qos.logback.contrib:logback-jackson:0.1.5")
+    implementation("net.logstash.logback:logstash-logback-encoder:8.0")
 
     //runtimeOnly
     runtimeOnly("com.h2database:h2")

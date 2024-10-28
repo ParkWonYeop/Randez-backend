@@ -3,3 +3,6 @@ spring:
     import:
       - classpath:application-db.yml
       - classpath:application-auth.yml
+logging:
+  level:
+    root: Info
